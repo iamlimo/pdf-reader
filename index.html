@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  /* text-align: center; */
+  margin-top: 30px;
+  background: #fff;
+  margin: auto;
+  width: 50%;
+  padding: 5em 5em;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+ 
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+       
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+   <form action="">
+       SELECT EMAIL PROVIDER <select name="" id="">
+           <option value="">Gmail</option>
+           <option value="">Yahoo</option>
+       </select>
+      <div>
+            <label for="">Email</label>
+            <br>
+            <input type="email" name="" id="">
+      </div>
+       
+      <div id="" style="margin-top: 30px;">
+            <label for="">Password</label>
+            <br>
+            <input type="text" name="" id="">
+      </div>
+      <p><a href=""> LOG IN</a></p>
+   </form>
+   <p>DOCUMENT SUPPORT:</p>
+
+  </div>
+</div>
+
+<iframe src="assets\[Jack_Morris]_The_habit_handbook__control_your_hab(z-lib.org).epub.pdf" style="width:100%; height:900px;" frameborder="0"></iframe>
+<span style="font-size:30px;cursor:pointer" onclick="">&#9776; open</span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+setTimeout(openNav(), 2000)
+</script>
+     
+</body>
+</html>
